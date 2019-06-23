@@ -1,0 +1,20 @@
+plugins {
+    id 'kotlin'
+    id 'kotlin-kapt'
+    id 'com.stepango.aar2jar'
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    compileOnly androidJar
+    compileOnlyAar "androidx.lifecycle:lifecycle-extensions:2.0.0"
+    compileOnlyAar "androidx.lifecycle:lifecycle-livedata-core:2.0.0"
+    compileOnlyAar 'androidx.appcompat:appcompat:1.0.2'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+
+    implementation 'com.google.dagger:dagger:2.23.2'
+    kapt 'com.google.dagger:dagger-compiler:2.23.2'
+    
+    testImplementation "junit:junit:4.12"
+}
