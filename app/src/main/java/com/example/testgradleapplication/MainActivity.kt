@@ -6,6 +6,8 @@ import com.example.mylibrary.TestClass
 
 class MainActivity : AppCompatActivity() {
 
+    val a get() = ""
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)

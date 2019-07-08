@@ -1,5 +1,6 @@
 package com.example.testgradleapplication
 
+import androidx.annotation.Nullable
 import org.junit.Test
 
 import org.junit.Assert.*
@@ -11,6 +12,7 @@ import org.junit.Assert.*
  */
 class ExampleUnitTest {
     @Test
+    @Nullable
     fun addition_isCorrect() {
         assertEquals(4, 2 + 2)
     }
